@@ -17,7 +17,8 @@ from qiskit import QuantumCircuit
 from qiskit import execute, IBMQ, BasicAer
 from qiskit.providers.ibmq import least_busy
 
-provider = IBMQ.save_account('MY_API_TOKEN', overwrite=True)
+# set API key
+provider = IBMQ.save_account('33cffaf8135aea101f2e203badb4e2ada12c8bda16abd8b5617c028596779c0c0d7b1066d948036b6410ccaa5af530971d1c40f342121b18ceb9b1e061be595f', overwrite=True)
 
 # Create a Quantum Circuit
 qc = QuantumCircuit(2, 2)
